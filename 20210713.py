@@ -88,7 +88,6 @@ data = pd.DataFrame(dataset.data, columns=dataset.feature_names)
 xTrain, xTest, yTrain, yTest = train_test_split(data, dataset.target, random_state=42)
 
 import matplotlib.pyplot as plt
-
 xTrain.plot(kind="box")
 plt.title("xTrain")
 plt.show()

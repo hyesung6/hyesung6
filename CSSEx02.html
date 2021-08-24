@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 선택자</title>
+    <style type="text/css">
+    /*
+      h1 글자색 : red
+      p  글자색 : green
+     */
+
+     h1 {
+         color : red;
+         }
+     p {
+        color : green;
+        }
+
+        * {
+          font-size : 30px;
+          font-family : "맑은고딕", "나눔고딕", sans-serif;
+        }
+
+        #first {
+            color : purple;
+            }
+        .second {
+            color : pink;
+            font-size : 80px;
+            }
+    </style>
+</head>
+<body>
+
+  <p> 태그 불러오기
+    CSS 선택자 <br>
+    1. HTML tag 모두         <br>
+    2. id      ======>    # <br>
+    3. class   ======>    . <br>
+    4. 전체     ======>    * <br>
+  </p>
+
+  <h1>Type 선택자</h1>
+  <p id="first">HTML 모든 요소는 선택자로 사용가능</p>        <!-- 같은 선택자라도 id나 class를 이용하여 구분지어 사용 가능 -->
+  <p>HTML 모든 요소는 선택자로 사용가능</p>
+  <p class="second">HTML 모든 요소는 선택자로 사용가능</p>
+  <p>HTML 모든 요소는 선택자로 사용가능</p>
+  <p class="second">HTML 모든 요소는 선택자로 사용가능</p>
+  <p>HTML 모든 요소는 선택자로 사용가능</p>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>구조적 Pseudo-class</title>
+	    <style>
+        li {
+            list-style-type : none;
+            float : left;
+            margin-right : 30px;
+            font-size : 50px;
+            font-family : Arial;
+        }
+
+        li:nth-child(odd){
+            color : red;
+            font-weight : bold;
+        }
+
+        li:nth-child(2){
+            color : green;
+            font-family : Comic Sans Ms;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h2>구조적 Pseudo-class</h2>
+    <p>
+        여러 개가 나열되어 있는 요소 중에서 특정 부분에만 다른 스타일을 적용
+    </p>
+
+    <table>
+		<tr>
+			<th>:nth-child(n)</th>
+			<td>항목 중에서 n번째 자식을 선택 (참고 : 수식으로도 가능 ex) 3n-1 )</td>
+		</tr>
+		<tr>
+			<th>:nth-last-child(n)</th>
+			<td>끝부터 n번째 자식을 선택</td>
+		</tr>
+		<tr>
+			<th>:nth-of-child(n)</th>
+			<td>유형이 같은 n번째 자식을 선택</td>
+		</tr>
+		<tr>
+			<th>:nth-last-of-child(n)</th>
+			<td>끝부터 유형이 같은 n번째 자식을 선택</td>
+		</tr>
+		<tr>
+			<th>:nth-child(odd)</th>
+			<td>홀수번째 유형을 선택</td>
+		</tr>
+		<tr>
+			<th>:nth-child(even)</th>
+			<td>짝수번째 유형을 선택</td>
+		</tr>
+	</table>
+    <hr>
+
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+        <li>G</li>
+        <li>H</li>
+    </ul>
+
+</body>
+</html>

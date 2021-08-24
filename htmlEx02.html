@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>데이터 입력 및 전달</title>
+</head>
+<body>
+<!--
+    form : 제출하는 기능
+
+    form method = "get"      => 데이터를 전달할 때 get방식(255자 까지만 가능)으로 전달
+                             => 웹브라우저 주소창에 내용을 넣어서 전달
+
+    form method = "post"     => 데이터를 전달할 때 post 방식
+                             => 주소창을 이용한 내용 전달방식 x, 주소창에 노출되지 않는다
+                             => 소스코드 안쪽에 넣어서 전달
+
+    default : get방식
+-->
+
+  <form>
+    <table border="1" cellspacing="0" cellpadding="10" width="300px">
+        <tr>
+            <th>ID</th>
+            <td>
+                <input type="text" name="id">
+            </td>
+        </tr>
+        <tr>
+            <th>PW</th>
+            <td>
+                <input type="text" name="pw">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="로그인">
+                <input type="reset" value="다시입력">
+            </td>
+        </tr>
+    </table>
+  </form>
+
+</body>
+</html>

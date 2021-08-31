@@ -16,3 +16,7 @@ class Migration(migrations.Migration):
             field=models.BooleanField(default=False),
         ),
     ]
+
+
+# db를 삭제하고 싶으면 마이그레이션 파일 삭제 후, 터미널에서 새롭게 마이그레이션
+# python manage.py migraions
